@@ -1,3 +1,7 @@
+"Tim Pope is a genius, let's face it
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 " Syntax colouring for a zillion languages
 syntax on
 
