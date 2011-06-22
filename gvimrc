@@ -1,6 +1,7 @@
 " Fonts & Colors
 set guifont=Bitstream\ Vera\ Sans\ Mono:h13
-colorscheme idleFingers
+colorscheme solarized
+set background=dark
 
 " Ugly toolbar out of my way!
 set guioptions=egmrt
