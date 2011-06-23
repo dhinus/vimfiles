@@ -1,4 +1,5 @@
 "Tim Pope is a genius, let's face it
+let g:pathogen_disabled = ['ragtag']
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
