@@ -1,5 +1,5 @@
 " Fonts & Colors
-set guifont=Bitstream\ Vera\ Sans\ Mono:h13
+set guifont=DejaVu\ Sans\ Mono:h13
 colorscheme solarized
 set background=dark
 
