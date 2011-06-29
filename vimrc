@@ -18,6 +18,7 @@ set expandtab
 set smartindent
 set autoindent
 set shiftwidth=2
+set formatoptions=tcqro
 
 " Let's get wild
 set wildmenu
