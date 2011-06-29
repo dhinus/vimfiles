@@ -39,7 +39,3 @@ vmap <D-]> >gv
 " Allow hiding modified buffers (plays nice with Command-T plugin)
 set hidden
 
-" This is required for NERDCommenter to guess how to comment
-filetype plugin on
-" I really like this option, it puts a space after a comment char
-let g:NERDSpaceDelims = 1
