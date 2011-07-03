@@ -6,8 +6,9 @@ set background=dark
 " Ugly toolbar out of my way!
 set guioptions=egmrt
 
-" Don't harass me with silly sounds
+" Don't harass me with silly sounds or flashes
 set visualbell
+set t_vb=
 
 " A nice dimension for my screen
 set lines=55
