@@ -14,8 +14,10 @@ set t_vb=
 set lines=55
 set columns=120
 
-" When I go full screen, I mean FULL
-set fuoptions=maxvert,maxhorz
+if has("gui_macvim")
+  " When I go full screen, I mean FULL
+  set fuoptions=maxvert,maxhorz
+endif
 
 " Show line numbers
 set nu
