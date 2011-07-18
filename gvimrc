@@ -14,6 +14,7 @@ set t_vb=
 set lines=55
 set columns=120
 
+" MacVim options
 if has("gui_macvim")
   " When I go full screen, I mean FULL
   set fuoptions=maxvert,maxhorz
@@ -21,6 +22,9 @@ endif
 
 " Show line numbers
 set nu
+
+" Gently highlight the current line
+set cursorline on
 
 " Always show the status line
 set laststatus=2
