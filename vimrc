@@ -17,12 +17,22 @@ set encoding=utf-8
 set backspace=2
 
 " Tabs sweet tabs
-set tabstop=2
 set expandtab
-set smartindent
-set autoindent
+set tabstop=2
 set shiftwidth=2
+set softtabstop=2
+
+" set smartindent
+" set autoindent
+
+" Magic indenting
+filetype plugin indent on
+
+" Keep tidy
 set formatoptions=tcqro
+set textwidth=100
+set wrap
+set wrapmargin=2
 
 " Let's get wild
 set wildmenu
