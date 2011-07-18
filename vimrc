@@ -62,7 +62,20 @@ nmap <D-[> <<
 nmap <D-]> >>
 vmap <D-[> <gv
 vmap <D-]> >gv
+imap <D-[> <Esc><<
+imap <D-]> <Esc>>>
+
+" TextMate-like commenting
+nmap <D-/> gcc
+vmap <D-/> gC
+imap <D-/> <Esc>gcci
+
+" Make Command-T go with its name
+" map <D-t> :CommandT<CR>
+" imap <D-t> <Esc>:CommandT<CR>
 
 " Allow hiding modified buffers (plays nice with Command-T plugin)
 set hidden
 
+" Keep Command-T short
+let g:CommandTMaxHeight=15
