@@ -22,6 +22,9 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 
+" Highlight tabs and trailing spaces
+set listchars=tab:>\ ,trail:·,extends:>,precedes:<,nbsp:+
+
 " set smartindent
 " set autoindent
 
