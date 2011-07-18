@@ -24,7 +24,7 @@ endif
 set nu
 
 " Gently highlight the current line
-set cursorline on
+set cursorline
 
 " Always show the status line
 set laststatus=2
