@@ -11,6 +11,7 @@ set nocompatible
 
 " UTF-8 is the only encoding I want
 set fileencodings=utf-8
+set encoding=utf-8
 
 " Backspace with license to kill
 set backspace=2
