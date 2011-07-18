@@ -41,6 +41,16 @@ set wrapmargin=2
 set wildmenu
 set wildmode=longest:full
 
+" Smart searches
+set ignorecase
+set smartcase
+
+" Smoooooth scrolling
+set scrolloff=2
+set scroll=5
+noremap <C-e> <C-e><C-e><C-e><C-e><C-e>
+noremap <C-y> <C-y><C-y><C-y><C-y><C-y>
+
 " Fast window switching
 map <C-h> <C-w>h
 map <C-j> <C-w>j
