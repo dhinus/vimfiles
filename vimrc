@@ -83,3 +83,6 @@ let g:CommandTMaxHeight=15
 
 " I've been typing :NERDTree too many times
 map <F2> <ESC>:NERDTreeToggle<RETURN>
+
+" Quick XML formatting that just works
+vmap ,x :!tidy -q -i -xml -wrap 500<CR>
