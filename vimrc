@@ -80,3 +80,6 @@ set hidden
 
 " Keep Command-T short
 let g:CommandTMaxHeight=15
+
+" I've been typing :NERDTree too many times
+map <F2> <ESC>:NERDTreeToggle<RETURN>
