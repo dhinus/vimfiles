@@ -1,4 +1,4 @@
-"Tim Pope is a genius, let's face it
+" Tim Pope is a genius, let's face it
 let g:pathogen_disabled = ["ragtag","taglist"]
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
@@ -6,8 +6,11 @@ call pathogen#helptags()
 " Syntax colouring for a zillion languages
 syntax on
 
-" I read this is nice
+" I've read this is nice
 set nocompatible
+
+" Allow hiding modified buffers (plays nice with Command-T plugin)
+set hidden
 
 " UTF-8 is the only encoding I want
 set fileencodings=utf-8
@@ -25,9 +28,6 @@ set softtabstop=2
 " Highlight tabs and trailing spaces
 set listchars=tab:>\ ,trail:·,extends:>,precedes:<,nbsp:+
 set list
-
-" set smartindent
-" set autoindent
 
 " Magic indenting
 filetype plugin indent on
@@ -49,16 +49,20 @@ set smartcase
 " Smoooooth scrolling
 set scrolloff=2
 set scroll=5
+
+" Now for some keybinding pleasure...
+
+" * Moving faster up and down
 noremap <C-e> <C-e><C-e><C-e><C-e><C-e>
 noremap <C-y> <C-y><C-y><C-y><C-y><C-y>
 
-" Fast window switching
+" * Fast window switching
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-" TextMate-like indentation
+" * TextMate-like indentation
 nmap <D-[> <<
 nmap <D-]> >>
 vmap <D-[> <gv
@@ -66,23 +70,20 @@ vmap <D-]> >gv
 imap <D-[> <Esc><<
 imap <D-]> <Esc>>>
 
-" TextMate-like commenting
+" * TextMate-like commenting
 nmap <D-/> gcc
 vmap <D-/> gC
 imap <D-/> <Esc>gcci
 
-" Make Command-T go with its name
-" map <D-t> :CommandT<CR>
-" imap <D-t> <Esc>:CommandT<CR>
-
-" Allow hiding modified buffers (plays nice with Command-T plugin)
-set hidden
-
-" Keep Command-T short
-let g:CommandTMaxHeight=15
-
-" I've been typing :NERDTree too many times
+" * I've been typing :NERDTree too many times
 map <F2> <ESC>:NERDTreeToggle<RETURN>
 
-" Quick XML formatting that just works
+" * Quick XML formatting that just works
 vmap ,x :!tidy -q -i -xml -wrap 500<CR>
+
+" Obscure plugin options...
+
+
+" * Keep Command-T short
+let g:CommandTMaxHeight=15
+
