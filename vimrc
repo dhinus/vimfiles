@@ -83,6 +83,8 @@ vmap ,x :!tidy -q -i -xml -wrap 500<CR>
 
 " Obscure plugin options...
 
+" * Adding smartcase to Ack
+let g:ackprg="ack -H --nocolor --nogroup --column --smart-case"
 
 " * Keep Command-T short
 let g:CommandTMaxHeight=15
