@@ -50,5 +50,8 @@
   url = https://github.com/vim-scripts/taglist.vim.git
   ignore = dirty
 [submodule "bundle/ack"]
-	path = bundle/ack
-	url = https://github.com/mileszs/ack.vim.git
+  path = bundle/ack
+  url = https://github.com/mileszs/ack.vim.git
+[submodule "bundle/vim-align"]
+  path = bundle/vim-align
+  url = https://github.com/tsaleh/vim-align.git
