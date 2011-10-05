@@ -21,9 +21,6 @@
 [submodule "bundle/tcomment"]
   path = bundle/tcomment
   url = https://github.com/tomtom/tcomment_vim
-[submodule "bundle/simple-javascript-indenter"]
-  path = bundle/simple-javascript-indenter
-  url = https://github.com/jiangmiao/simple-javascript-indenter.git
 [submodule "bundle/ragtag"]
   path = bundle/ragtag
   url = https://github.com/tpope/vim-ragtag.git
@@ -55,3 +52,6 @@
 [submodule "bundle/vim-align"]
   path = bundle/vim-align
   url = https://github.com/tsaleh/vim-align.git
+[submodule "bundle/javascript"]
+  path = bundle/javascript
+  url = git://github.com/pangloss/vim-javascript.git
