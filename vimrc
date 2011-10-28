@@ -50,6 +50,7 @@ set smartcase
 set scrolloff=2
 set scroll=5
 
+
 " Now for some keybinding pleasure...
 
 " * Moving faster up and down
@@ -62,24 +63,18 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-" * TextMate-like indentation
-nmap <D-[> <<
-nmap <D-]> >>
-vmap <D-[> <gv
-vmap <D-]> >gv
-imap <D-[> <Esc><<
-imap <D-]> <Esc>>>
-
-" * TextMate-like commenting
-nmap <D-/> gcc
-vmap <D-/> gC
-imap <D-/> <Esc>gcci
-
 " * I've been typing :NERDTree too many times
 map <F2> <ESC>:NERDTreeToggle<RETURN>
 
 " * Quick XML formatting that just works
-vmap ,x :!tidy -q -i -xml -wrap 500<CR>
+map ,x :!tidy -q -i -xml -wrap 500<CR>
+
+" * Remapping JSbeautify to a similar shortcut
+map ,j :call g:Jsbeautify()<cr>:retab<cr>
+
+" * A Command-T shortcut that works in every occasion
+map ,t :CommandT<CR>
+
 
 " Obscure plugin options...
 
