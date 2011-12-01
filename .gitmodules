@@ -13,7 +13,7 @@
   url = git://git.wincent.com/command-t.git
 [submodule "bundle/snipmate"]
   path = bundle/snipmate
-  url = git://github.com/msanders/snipmate.vim.git
+  url = https://github.com/garbas/vim-snipmate.git
   ignore = dirty
 [submodule "bundle/nerdtree"]
   path = bundle/nerdtree
@@ -61,3 +61,12 @@
 [submodule "bundle/colors-molokai"]
   path = bundle/colors-molokai
   url = https://github.com/vim-scripts/molokai.git
+[submodule "bundle/snipmate-snippets"]
+  path = bundle/snipmate-snippets
+  url = https://github.com/honza/snipmate-snippets.git
+[submodule "bundle/vim-addon-mw-utils"]
+  path = bundle/vim-addon-mw-utils
+  url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "bundle/tlib"]
+  path = bundle/tlib
+  url = https://github.com/tomtom/tlib_vim.git
