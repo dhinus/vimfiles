@@ -60,7 +60,7 @@ if has("gui_macvim")
 else
   "gVim counterpart
 
-  set guifont=DejaVu\ Sans\ Mono\ Bold\ 10
+  set guifont=DejaVu\ Sans\ Mono\ 10
   set linespace=0
 
   " TextMate-like indentation
