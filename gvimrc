@@ -1,6 +1,5 @@
 " Fonts & Colors
-colorscheme solarized
-set background=dark
+colorscheme Tomorrow-Night
 
 " Ugly toolbar out of my way!
 set guioptions=egrt
@@ -33,8 +32,8 @@ command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | di
 
 " MacVim options
 if has("gui_macvim")
-  set guifont=DejaVu\ Sans\ Mono:h13
-  set linespace=0
+  set guifont=DejaVu\ Sans\ Mono:h14
+  set linespace=2
 
   " When I go full screen, I mean FULL
   set fuoptions=maxvert,maxhorz
@@ -62,7 +61,7 @@ else
   "gVim counterpart
 
   set guifont=DejaVu\ Sans\ Mono\ Bold\ 10
-  set linespace=-2
+  set linespace=0
 
   " TextMate-like indentation
   nmap <M-[> <<
