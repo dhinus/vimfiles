@@ -32,6 +32,7 @@ command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | di
 
 " MacVim options
 if has("gui_macvim")
+
   set guifont=DejaVu\ Sans\ Mono:h14
   set linespace=2
 
@@ -54,11 +55,17 @@ if has("gui_macvim")
   " TextMate-like Command-T
   map <D-t> :CommandT<CR>
   imap <D-t> <Esc>:CommandT<CR>
+  map <D-b> :CommandTBuffer<CR>
+  imap <D-b> <Esc>:CommandTBuffer<CR>
 
   " Remap 'New tab' to apple-shift-t
   macmenu &File.New\ Tab key=<D-T>
+  " Remap 'Make' to apple-shift-b
+  macmenu &Tools.Make key=<D-B>
+
 else
-  "gVim counterpart
+
+  " gVim counterpart
 
   set guifont=DejaVu\ Sans\ Mono\ 10
   set linespace=0
@@ -79,5 +86,7 @@ else
   " TextMate-like Command-T
   map <M-t> :CommandT<CR>
   imap <M-t> <Esc>:CommandT<CR>
+  map <M-b> :CommandTBuffer<CR>
+  imap <M-b> <Esc>:CommandTBuffer<CR>
 
 endif

@@ -50,7 +50,6 @@ set smartcase
 set scrolloff=2
 set scroll=5
 
-
 " Now for some keybinding pleasure...
 
 " * Moving faster up and down
@@ -72,9 +71,9 @@ map ,x :!tidy -q -i -xml -wrap 500<CR>
 " * Remapping JSbeautify to a similar shortcut
 map ,j :call g:Jsbeautify()<cr>:retab<cr>
 
-" * A Command-T shortcut that works in every occasion
+" * Command-T shortcuts that works in every occasion
 map ,t :CommandT<CR>
-
+map ,b :CommandTBuffer<CR>
 
 " Obscure plugin options...
 
