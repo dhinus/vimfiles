@@ -35,6 +35,7 @@ filetype plugin indent on
 " Keep tidy
 set formatoptions=tcqro
 set textwidth=100
+set colorcolumn=80
 set nowrap
 set wrapmargin=2
 
