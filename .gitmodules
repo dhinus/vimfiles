@@ -71,5 +71,8 @@
   path = bundle/tlib
   url = https://github.com/tomtom/tlib_vim.git
 [submodule "bundle/colors-tomorrow"]
-	path = bundle/colors-tomorrow
-	url = https://github.com/chriskempson/vim-tomorrow-theme.git
+  path = bundle/colors-tomorrow
+  url = https://github.com/chriskempson/vim-tomorrow-theme.git
+[submodule "bundle/colors-herald"]
+	path = bundle/colors-herald
+	url = https://github.com/pigoz/herald.git
