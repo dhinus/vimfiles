@@ -20,10 +20,8 @@ set encoding=utf-8
 set backspace=2
 
 " Tabs sweet tabs
-set expandtab
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+autocmd FileType * set ts=2 sw=2 sts=2 expandtab
+autocmd FileType c,m,h,objc,python,php set ts=4 sw=4 sts=4 expandtab
 
 " Highlight tabs and trailing spaces
 set listchars=tab:>\ ,trail:·,extends:>,precedes:<,nbsp:+
