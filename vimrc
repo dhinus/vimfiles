@@ -6,6 +6,10 @@ call pathogen#helptags()
 " Syntax colouring for a zillion languages
 syntax on
 
+" Same colours for vim, gvim, macvim
+colorscheme base16-default
+set background=dark
+
 " I've read this is nice
 set nocompatible
 
