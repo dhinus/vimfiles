@@ -1,6 +1,3 @@
-" Colors
-colorscheme base16-default
-set background=dark
 
 " Ugly toolbar out of my way!
 set guioptions=egrt
