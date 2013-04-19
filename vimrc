@@ -53,6 +53,10 @@ set smartcase
 set scrolloff=2
 set scroll=5
 
+" Natural splits
+set splitbelow
+set splitright
+
 " Now for some keybinding pleasure...
 
 " * Moving faster up and down
