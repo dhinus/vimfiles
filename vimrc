@@ -37,9 +37,11 @@ filetype plugin indent on
 " Keep tidy
 set formatoptions=tcqro
 set textwidth=80
-set colorcolumn=80
 set nowrap
 set wrapmargin=2
+if exists('+colorcolumn') " vim >= 7.3
+  set colorcolumn=80
+endif
 
 " Let's get wild
 set wildmenu
