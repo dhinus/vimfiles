@@ -9,6 +9,7 @@ syntax on
 " Same colours for vim, gvim, macvim
 colorscheme base16-default
 set background=dark
+set t_Co=256
 
 " I've read this is nice
 set nocompatible
@@ -58,6 +59,24 @@ set scroll=5
 " Natural splits
 set splitbelow
 set splitright
+
+" Show line numbers
+set nu
+
+" Gently highlight the current line
+set cursorline
+
+" Always show the status line
+set laststatus=2
+
+" Simple statusline to start with
+set statusline=%f\ \ %c,%l/%L\ %P
+
+" Let's add some info from the Fugitive plugin
+set statusline+=\ \ %{fugitive#statusline()}
+
+" Useful snippet straight from VIM documentation
+command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
 
 " Now for some keybinding pleasure...
 
