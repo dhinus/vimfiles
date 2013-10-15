@@ -99,9 +99,24 @@ map ,x :!tidy -q -i -xml -wrap 500<CR>
 " * Remapping JSbeautify to a similar shortcut
 map ,j :call g:Jsbeautify()<cr>:retab<cr>
 
-" * Command-T shortcuts that works in every occasion
+" * When your Meta key is not available... use the comma, Luke!
 map ,t :CommandT<CR>
 map ,b :CommandTBuffer<CR>
+
+nmap ,[ <<
+nmap ,] >>
+vmap ,[ <gv
+vmap ,] >gv
+imap ,[ <Esc><<
+imap ,] <Esc>>>
+
+nmap ,/ gcc
+vmap ,/ gC
+imap ,/ <Esc>gcci
+
+nmap ,T :tabnew<CR>
+nmap ,{ :tabprev<CR>
+nmap ,} :tabnext<CR>
 
 " Obscure plugin options...
 
