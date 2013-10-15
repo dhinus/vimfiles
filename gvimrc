@@ -12,7 +12,7 @@ set columns=120
 " MacVim options
 if has("gui_macvim")
 
-  set guifont=DejaVu\ Sans\ Mono:h14
+  set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14
   set linespace=2
 
   " When I go full screen, I mean FULL

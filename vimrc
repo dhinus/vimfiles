@@ -69,12 +69,6 @@ set cursorline
 " Always show the status line
 set laststatus=2
 
-" Simple statusline to start with
-set statusline=%f\ \ %c,%l/%L\ %P
-
-" Let's add some info from the Fugitive plugin
-set statusline+=\ \ %{fugitive#statusline()}
-
 " Useful snippet straight from VIM documentation
 command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
 
@@ -126,3 +120,6 @@ let g:ackprg="ack -H --nocolor --nogroup --column --smart-case"
 " * Keep Command-T short
 let g:CommandTMaxHeight=15
 
+" * Enable vim-airline tabline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts=1
