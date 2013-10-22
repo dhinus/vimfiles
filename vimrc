@@ -7,7 +7,7 @@ call pathogen#helptags()
 syntax on
 
 " Same colours for vim, gvim, macvim
-colorscheme base16-default
+colorscheme solarized
 set background=dark
 set t_Co=256
 
