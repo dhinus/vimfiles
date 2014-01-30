@@ -28,7 +28,7 @@ if has("gui_macvim")
 
   " TextMate-like commenting
   nmap <D-/> gcc
-  vmap <D-/> gC
+  vmap <D-/> gc
   imap <D-/> <Esc>gcci
 
   " TextMate-like Command-T

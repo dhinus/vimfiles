@@ -105,7 +105,7 @@ imap ,[ <Esc><<
 imap ,] <Esc>>>
 
 nmap ,/ gcc
-vmap ,/ gC
+vmap ,/ gc
 imap ,/ <Esc>gcci
 
 nmap ,T :tabnew<CR>
