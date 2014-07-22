@@ -9,8 +9,9 @@ set t_vb=
 set lines=55
 set columns=120
 
-" MacVim options
 if has("gui_macvim")
+
+  " MacVim options
 
   set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14
   set linespace=2
@@ -31,17 +32,6 @@ if has("gui_macvim")
   vmap <D-/> gc
   imap <D-/> <Esc>gcci
 
-  " TextMate-like Command-T
-  map <D-t> :CommandT<CR>
-  imap <D-t> <Esc>:CommandT<CR>
-  map <D-b> :CommandTBuffer<CR>
-  imap <D-b> <Esc>:CommandTBuffer<CR>
-
-  " Remap 'New tab' to apple-shift-t
-  macmenu &File.New\ Tab key=<D-T>
-  " Remap 'Make' to apple-shift-b
-  macmenu &Tools.Make key=<D-B>
-
 else
 
   " gVim counterpart
@@ -61,11 +51,5 @@ else
   nmap <M-/> gcc
   vmap <M-/> gC
   imap <M-/> <Esc>gcci
-
-  " TextMate-like Command-T
-  map <M-t> :CommandT<CR>
-  imap <M-t> <Esc>:CommandT<CR>
-  map <M-b> :CommandTBuffer<CR>
-  imap <M-b> <Esc>:CommandTBuffer<CR>
 
 endif
