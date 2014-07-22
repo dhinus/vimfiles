@@ -13,7 +13,7 @@ set t_Co=256
 " I've read this is nice
 set nocompatible
 
-" Allow hiding modified buffers (plays nice with Command-T plugin)
+" Allow hiding modified buffers
 set hidden
 
 " UTF-8 is the only encoding I want
@@ -93,9 +93,6 @@ map ,x :!tidy -q -i -xml -wrap 500<CR>
 map ,j :call g:Jsbeautify()<cr>:retab<cr>
 
 " * When your Meta key is not available... use the comma, Luke!
-map ,t :CommandT<CR>
-map ,b :CommandTBuffer<CR>
-
 nmap ,[ <<
 nmap ,] >>
 vmap ,[ <gv
@@ -116,9 +113,9 @@ nmap ,} :tabnext<CR>
 " * Adding smartcase to Ack
 let g:ackprg="ack -H --nocolor --nogroup --column --smart-case"
 
-" * Keep Command-T short
-let g:CommandTMaxHeight=15
-
 " * Enable vim-airline tabline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts=1
+
+" * Use .gitignore for ctrlp (https://github.com/kien/ctrlp.vim/issues/174)
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
