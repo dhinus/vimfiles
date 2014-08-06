@@ -71,6 +71,11 @@ set laststatus=2
 " Useful snippet straight from VIM documentation
 command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
 
+" Persistent undo
+if has('persistent_undo') " vim >= 7.3
+  set undofile
+endif
+
 " Now for some keybinding pleasure...
 
 " * Moving faster up and down
