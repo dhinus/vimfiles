@@ -25,7 +25,7 @@ set backspace=2
 
 " Tabs sweet tabs
 autocmd FileType * set ts=2 sw=2 sts=2 expandtab
-autocmd FileType c,m,h,objc,python,php,javascript set ts=4 sw=4 sts=4 expandtab
+autocmd FileType c,m,h,objc,python,php set ts=4 sw=4 sts=4 expandtab
 
 " Highlight tabs and trailing spaces
 set listchars=tab:>\ ,trail:·,extends:>,precedes:<,nbsp:+
