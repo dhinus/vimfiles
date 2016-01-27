@@ -95,7 +95,7 @@ map <F2> <ESC>:NERDTreeToggle<RETURN>
 map ,x :!tidy -q -i -xml -wrap 500<CR>
 
 " * Remapping JSbeautify to a similar shortcut
-map ,j :call g:Jsbeautify()<cr>:retab<cr>
+map ,j :call g:JsBeautify()<cr>
 
 " * When your Meta key is not available... use the comma, Luke!
 nmap ,[ <<
