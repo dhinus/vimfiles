@@ -88,8 +88,9 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-" * I've been typing :NERDTree too many times
+" * I've been typing :NERDTree and :NERDTreeFind too many times
 map <F2> <ESC>:NERDTreeToggle<RETURN>
+map <F3> <ESC>:NERDTreeFind<RETURN>
 
 " * Quick XML formatting that just works
 map ,x :!tidy -q -i -xml -wrap 500<CR>
