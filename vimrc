@@ -125,3 +125,6 @@ let g:airline_powerline_fonts=1
 
 " * Use .gitignore for ctrlp (https://github.com/kien/ctrlp.vim/issues/174)
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
+" * Enable eslint checker for JavaScript files
+let g:syntastic_javascript_checkers = ['eslint']
