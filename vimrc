@@ -92,6 +92,9 @@ map <C-l> <C-w>l
 map <F2> <ESC>:NERDTreeToggle<RETURN>
 map <F3> <ESC>:NERDTreeFind<RETURN>
 
+" * Not to mention the times I typed :set toggle
+set pastetoggle=<F4>
+
 " * Quick XML formatting that just works
 map ,x :!tidy -q -i -xml -wrap 500<CR>
 
