@@ -111,3 +111,6 @@
 [submodule "bundle/syntastic-local-eslint.vim"]
 	path = bundle/syntastic-local-eslint.vim
 	url = https://github.com/mtscout6/syntastic-local-eslint.vim.git
+[submodule "bundle/vim-flow"]
+	path = bundle/vim-flow
+	url = https://github.com/flowtype/vim-flow.git
