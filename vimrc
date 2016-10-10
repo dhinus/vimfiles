@@ -133,7 +133,7 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 let g:syntastic_javascript_checkers = ['eslint', 'flow']
 
 " * Workaround for https://github.com/scrooloose/syntastic/issues/822
-nnoremap <silent> <c-j> :TmuxNavigateDown<cr>:redraw!<cr>
+autocmd VimEnter * nnoremap <silent> <c-j> :TmuxNavigateDown<cr>:redraw!<cr>
 
 " * Disable vim-flow autocheck (already checked by Syntastic)
 let g:flow#enable = 0
