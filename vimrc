@@ -71,8 +71,12 @@ set laststatus=2
 " Useful snippet straight from VIM documentation
 command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
 
+" Store swap files in ~/.vim/swapfiles if it exists, otherwise /tmp
+set dir=~/.vim/swapfiles//,/tmp
+
 " Persistent undo
 if has('persistent_undo') " vim >= 7.3
+  set undodir=~/.vim/undofiles//,/tmp
   set undofile
 endif
 
