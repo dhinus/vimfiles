@@ -102,15 +102,12 @@
 [submodule "bundle/vim-jsbeautify"]
 	path = bundle/vim-jsbeautify
 	url = https://github.com/maksimr/vim-jsbeautify.git
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = https://github.com/scrooloose/syntastic
 [submodule "bundle/vim-scala"]
 	path = bundle/vim-scala
 	url = https://github.com/derekwyatt/vim-scala
-[submodule "bundle/syntastic-local-eslint.vim"]
-	path = bundle/syntastic-local-eslint.vim
-	url = https://github.com/mtscout6/syntastic-local-eslint.vim.git
 [submodule "bundle/vim-flow"]
 	path = bundle/vim-flow
 	url = https://github.com/flowtype/vim-flow.git
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/w0rp/ale.git
