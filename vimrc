@@ -93,6 +93,9 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" * How many times did I actually want to open the help?
+map <F1> <nop>
+
 " * I've been typing :NERDTree and :NERDTreeFind too many times
 map <F2> <ESC>:NERDTreeToggle<RETURN>
 map <F3> <ESC>:NERDTreeFind<RETURN>
