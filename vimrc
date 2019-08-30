@@ -81,6 +81,10 @@ if has('persistent_undo') " vim >= 7.3
   set undofile
 endif
 
+" Backups will save your life
+set backup
+set backupdir=~/.vim/backupfiles//,/tmp
+
 " Now for some keybinding pleasure...
 
 " * Moving faster up and down
