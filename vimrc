@@ -85,6 +85,15 @@ endif
 set backup
 set backupdir=~/.vim/backupfiles//,/tmp
 
+" This will open the QuickFix list automatically when using Ggrep
+" (hat-tip https://vi.stackexchange.com/a/9190/57383)
+augroup quickfix
+    autocmd!
+    " automatic location/quickfix window
+    autocmd QuickFixCmdPost [^l]* cwindow
+    autocmd QuickFixCmdPost    l* lwindow
+augroup END
+
 " Now for some keybinding pleasure...
 
 " * Moving faster up and down
