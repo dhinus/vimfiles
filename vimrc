@@ -8,7 +8,6 @@ syntax on
 " Technicolor
 colorscheme gruvbox
 set background=dark
-set t_Co=256
 
 " I've read this is nice
 set nocompatible
